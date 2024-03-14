@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*!
+ * Font Awesome Free 5.12.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ @font-face {
+  font-family: 'sys-user';
+  font-style: normal;
+  font-weight: 900;
+  src: url(/fonts/icon/fa-solid-900.eot);
+  src: url(/fonts/icon/fa-solid-900.eot?#iefix) format("embedded-opentype"),
+       url(/fonts/icon/fa-solid-900.woff2) format("woff2"),
+       url(/fonts/icon/fa-solid-900.woff) format("woff"),
+       url(/fonts/icon/fa-solid-900.ttf) format("truetype")
+}
+*/
+/*
+
+.fa,.fas,.sys-icon {
+  font-family: "sys-user",sans-serif;
+  font-weight: 900;
+  font-style: normal
+}
+*/
+/*
+@font-face {
+  font-family: 'ui-sans-serif';
+  font-style: light;
+  font-weight: 300;
+  src: url(/fonts/sans-serif/sf-ui-display-light.otf);
+}
+@font-face {
+  font-family: 'ui-sans-serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/sans-serif/sf-ui-display-black.otf);
+}
+@font-face {
+  font-family: 'ui-sans-serif';
+  font-style: medium;
+  font-weight: 500;
+  src: url(/fonts/sans-serif/sf-ui-display-medium.otf);
+}
+@font-face {
+  font-family: 'ui-sans-serif';
+  font-style: semibold;
+  font-weight: 600;
+  src: url(/fonts/sans-serif/sf-ui-display-semibold.otf);
+}
+@font-face {
+  font-family: 'ui-sans-serif';
+  font-style: bold;
+  font-weight: 700;
+  src: url(/fonts/sans-serif/sf-ui-display-bold.otf);
+}
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, ui-sans-serif, sans-serif, 'Arial Narrow', Arial;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body-bak {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.main-cnt,
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.nav-txt {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+  border-color: #0000;
+  border-width: 1px;
+}
+.nav-txt:hover {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+  background-color: #e5e7eb80;
+  border-color: #e5e7eb80;
+  border-width: 1px;
+  border-radius: 0.375rem;
+}
+
+.sys-icon {
+  font-family: 'sys-user', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.sys-icon-image,
+.sys-icon-svg {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bx-cover-wrapper {
+  background-image: url(/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bx-def-page-width {
+  max-width: 1440px;
+  width: 100%;
+}
+.bx-menu-tab-active a {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.bx-menu-tab-active .bx-mi-underline {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bx-def-color-bg-page {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.color-purple2 {
+  --tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity));
+}
+
+.bg-gradient-blue {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+.to-blue-500 {
+  --tw-gradient-to: #3b82f6;
+}
