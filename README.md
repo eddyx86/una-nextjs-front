@@ -13,13 +13,13 @@ corepack enable
 
 ## Getting Started Development
 
-Fisst, install the dependencies:
+Install the dependencies:
 
 ```bash
 pnpm install
 ```
 
-Second, run the development server:
+Run server for development:
 
 ```bash
 pnpm dev
